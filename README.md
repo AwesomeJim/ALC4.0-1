@@ -18,7 +18,7 @@ This challenge is a simple Android Application with three Activities, the first 
 
 Screenshots
 ------------
-![Home Page](Screenshots/device-2019-07-13-234529.png "Home Page" ) {:height="700px" width="400px"}  ![About ALC](Screenshots/device-2019-07-13-233246.png "About ALC" ){:height="700px" width="400px"}   ![My Profile](Screenshots/device-2019-07-13-233826.png "My Profile" ) {:height="700px" width="400px"} 
+![Home Page](Screenshots/device-2019-07-13-234529.png "Home Page" )  ![About ALC](Screenshots/device-2019-07-13-233246.png "About ALC" )   ![My Profile](Screenshots/device-2019-07-13-233826.png "My Profile" ) 
 
 
 # Sample Apk
