@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_user_profile_photo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:elevation="4dp"
+            android:src="@mipmap/ic_jimjim"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"
+            android:layout_marginTop="-100dp"
+            />
+
+        <ImageView
+            android:id="@+id/edit_user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/view_user_profile_photo"
+            android:layout_alignRight="@+id/view_user_profile_photo"
+            android:layout_marginTop="-60dp"
+            android:layout_gravity="end"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:tint="@color/colorWhite"
+            android:background="@drawable/circular_border_imageview"
+            android:elevation="5dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_dialog_pick" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/header_cover_image">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/berkshire_swash"
+                android:text="James Mbugua"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/profile_layout"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@mipmap/ic_call"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                            android:textColor="@color/cardview_dark_background" />
+                        <TextView
+                            android:id="@+id/user_official_Phone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:gravity="center_vertical"
+                            android:textStyle="normal"
+                            android:text="+254 710 696 572"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="55dp"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@mipmap/ic_email1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email Address"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                            android:textColor="@color/cardview_dark_background" />
+                        <TextView
+                            android:id="@+id/et_email_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:clickable="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:gravity="center_vertical"
+                            android:textStyle="normal"
+                            android:text="jimnahgua@gmail.com"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="55dp"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@mipmap/ic_track"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Track"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                            android:textColor="@color/cardview_dark_background" />
+                        <TextView
+                            android:id="@+id/et_track"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:clickable="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:gravity="center_vertical"
+                            android:textStyle="normal"
+                            android:text="Android"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="55dp"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@mipmap/ic_coutry"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                            android:textColor="@color/cardview_dark_background" />
+                        <TextView
+                            android:id="@+id/et_country"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:clickable="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:gravity="center_vertical"
+                            android:textStyle="normal"
+                            android:text="Kenya"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="55dp"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/ic_slack"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Slack Username"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                            android:textColor="@color/cardview_dark_background" />
+                        <TextView
+                            android:id="@+id/et_sla"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:clickable="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:gravity="center_vertical"
+                            android:textStyle="normal"
+                            android:text="Awesome Jim"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</ScrollView>
